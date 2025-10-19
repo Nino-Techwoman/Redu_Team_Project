@@ -1,7 +1,326 @@
-*{
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
 }
 
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  color: #222;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(180deg, #f4f4f4, #ddd);
+  padding: 18px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+}
+
+.logo .circle {
+  background: #f6a03c;
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* MENU */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  color: #f6a03c;
+}
+
+.auth a {
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 15px;
+  color: #444;
+}
+
+.signup {
+  border: 1px solid #ccc;
+  padding: 6px 14px;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.signup:hover {
+  background: #f6a03c;
+  color: #fff;
+  border-color: #f6a03c;
+}
+
+/* MENU TOGGLE (MOBILE) */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(180deg, #4b4b4b, #1b1b1b);
+  color: #fff;
+  padding: 100px 0;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-text h1 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.hero-text p {
+  font-weight: 400;
+  line-height: 1.6;
+  max-width: 500px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background: #f6a03c;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #ffb14f;
+}
+
+.play-btn {
+  background: #fff;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play {
+  color: #000;
+  font-size: 28px;
+  margin-left: 3px;
+}
+
+/* STATS */
+.stats {
+  background: #fff3e8;
+  padding: 60px 0;
+}
+
+.stats-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.stat h2 {
+  font-size: 26px;
+  color: #000;
+}
+
+.desc {
+  max-width: 500px;
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* TEAM */
+.team {
+  padding: 80px 0;
+}
+
+.team-inner {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.team-image {
+  background: #ccc;
+  flex: 1;
+  min-width: 280px;
+  height: 320px;
+  border-radius: 6px;
+}
+
+.team-text {
+  background: #3e2216;
+  color: #fff;
+  flex: 1;
+  min-width: 280px;
+  padding: 40px;
+  border-radius: 6px;
+}
+
+.team-text h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.team-text p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+/* BENEFITS */
+.benefits {
+  padding: 90px 0;
+}
+
+.benefits-inner h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 50px;
+}
+
+.benefit-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.benefit-left {
+  flex: 1;
+  min-width: 280px;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 14px;
+  margin-bottom: 12px;
+  gap: 12px;
+}
+
+.icon {
+  background: #fff7ef;
+  border: 1px solid #f1d8b6;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.benefit-right {
+  flex: 1;
+  min-width: 280px;
+  height: 240px;
+  background: #ccc;
+  border-radius: 6px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero-content, .team-inner, .benefit-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 34px;
+  }
+
+  .play-btn {
+    margin: 25px auto 0;
+  }
+
+  .stats-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* MOBILE NAVIGATION */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    width: 200px;
+    display: none;
+    padding: 15px 0;
+    border-radius: 8px;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .auth {
+    display: none;
+  }
+
+  .hero {
+    text-align: center;
+  }
+}
