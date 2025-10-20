@@ -449,7 +449,11 @@ nav a:hover {
     padding: 15px 0;
     border-radius: 8px;
   }
-
+   .header{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+   }
   nav ul.active {
     display: flex;
   }
@@ -465,6 +469,75 @@ nav a:hover {
   .hero {
     text-align: center;
   }
+
+  
+
+}
+
+@media (max-width: 1024px) {
+  .frequently {
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-bottom: 120px;
+  }
+
+  .frequently-title h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .frequently {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 100px;
+  }
+
+  .box1,
+  .box2,
+  .box3,
+  .box4,
+  .box5 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 24px;
+  }
+
+  .box1 {
+    gap: 24px;
+  }
+
+  .frequently-title h1 {
+    font-size: 28px;
+  }
+
+  .frequently-title p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .frequently {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 80px;
+  }
+
+  .frequently-title h1 {
+    font-size: 24px;
+  }
+
+  .box1-title h3 {
+    font-size: 18px;
+  }
+
+  .box1-title p {
+    font-size: 14px;
+  }
+
+  
+
 }
 
 @media (max-width: 1024px) {
