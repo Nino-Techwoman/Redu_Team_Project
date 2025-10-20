@@ -332,6 +332,7 @@ nav a:hover {
   padding-left: 120px;
   padding-right: 120px;
   align-items: center;
+  margin-bottom: 180px;
   
 }
 
@@ -405,6 +406,51 @@ nav a:hover {
   align-items: center;
 }
 
+
+/* It’s Easy To Get Started */
+.get-started{
+  padding-left: 120px;
+  padding-right: 120px;
+  background-color: #FFF8F1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 80px;
+
+
+  
+}
+.get-started-title{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+  
+}
+.get-started-title h1{
+  color: #1E1000;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.get-started-title p{
+  color: #1E1000B5;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.get-started-button{
+  background-color: #FF9F34;
+  max-width: fit-content;
+  padding: 16px 32px;
+  
+}
+.get-started-button a{
+  text-decoration: none;
+  color: white;
+}
 
 
 
@@ -621,5 +667,36 @@ nav a:hover {
   .box5{
     display: flex;
     justify-content: space-between;
+  }
+}
+
+
+/* It’s Easy To Get Started */
+@media (max-width: 480px) {
+  .get-started {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    gap: 28px;
+  }
+
+  .get-started-title h1 {
+    font-size: 24px;
+  }
+
+  .get-started-title p {
+    font-size: 14px;
+  }
+
+  .get-started-button {
+    width: 100%;
+    text-align: center;
+    padding: 14px 0;
+  }
+
+  .get-started-button a {
+    display: block;
+    width: 100%;
   }
 }
