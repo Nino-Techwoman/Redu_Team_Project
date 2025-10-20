@@ -327,96 +327,7 @@ nav a:hover {
   
 }
 
-/* Frequently Asked Questions (FAQ) */
 
-.frequently {
- 
-  width: 100%;
-  min-width: 300px;
-  padding-left: 120px;
-  padding-right: 120px;
-  margin-bottom: 180px;
-
-}
-.frequently-title{
-  text-align: center;
-  display: flex;
-  gap: 16px;
-  flex-direction: column;
-  margin-bottom: 52px;
-}
-.frequently-title h1{
-  color: #1E1000;
-  font-size: 40px;
-  font-weight: 600;
-
-}
-.frequently-title p{
-  color: #1E1000B5;
-  font-size: 16px;
-  font-weight: 400;
-}
-.boxes{
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-
-.box1{
-  border: 1px solid rgba(128, 128, 128, 0.476);
-  padding: 32px 40px;
-  display: flex;
-  
-  gap: 138px;
-}
-
-.box2{
-  display: flex;
-  border: 1px solid rgba(128, 128, 128, 0.476);
-  padding: 32px 40px;
-  justify-content: space-between;
-  align-items: center;
-}
-.box3{
-  display: flex;
-  border: 1px solid rgba(128, 128, 128, 0.476);
-  padding: 32px 40px;
-  justify-content: space-between;
-  align-items: center;
-}
-.box4{
-  display: flex;
-  border: 1px solid rgba(128, 128, 128, 0.476);
-  padding: 32px 40px;
-  justify-content: space-between;
-  align-items: center;
-}
-.box5{
-  display: flex;
-  border: 1px solid rgba(128, 128, 128, 0.476);
-  padding: 32px 40px;
-  justify-content: space-between;
-  align-items: center;
-}
-
-
-.box1-title{
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.box1-title h3{
-  color: #1E1000;
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.box1-title p{
-  color: #AAAAAA;
-  font-size: 16px;
-  font-weight: 400;
-}
 
 
 /* RESPONSIVE */
@@ -534,19 +445,6 @@ nav a:hover {
     font-size: 14px;
   }
 
-  .boxes {
-    gap: 24px;
-  }
+  
 
-  .box1{
-    padding: 20px;
-    
-  }
-  .box2,
-  .box3,
-  .box4,
-  .box5{
-    display: flex;
-    justify-content: space-between;
-  }
 }
